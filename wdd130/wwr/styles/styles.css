@@ -6,7 +6,7 @@ div {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    background-color: #52a3c1;
+    background-color: #dfdfdf;
 }
 header {
   background-color: white ;
@@ -84,4 +84,5 @@ footer a:hover{
 footer p{
     font-size: 1.2em;
     text-decoration: none;
+    color: white
 }
