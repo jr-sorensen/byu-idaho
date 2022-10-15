@@ -11,10 +11,9 @@ h2{
     margin:0;
 }
 
-div {
+#content {
     max-width: 1600px;
     margin: 0 auto;
-    text-align: center;
     background-color: #dfdfdf;
 }
 header {
@@ -22,8 +21,7 @@ header {
   padding: 20px;
 }
 nav a{
-    text-align: center;
-    color:#52a3c1; 
+    color:#dfdfdf; 
     text-decoration: none;
     font-family: "Acme", Arial, Verdana, sans-serif;
     padding: 20px;
