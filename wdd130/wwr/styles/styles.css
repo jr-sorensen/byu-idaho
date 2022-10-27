@@ -5,8 +5,9 @@ body {
     font-family: "Mukta", Trebuchet, Courier, sans-serif;
     font-size: 22px;
     margin: 0;
-    padding: 0;
-}   
+    padding: 0;    
+}
+
 h2{
     margin:0;
 }
@@ -16,49 +17,89 @@ h2{
     margin: 0 auto;
     background-color: #dfdfdf;
 }
+
 header {
+  display: grid;
+  grid-template-columns: 150px auto;
   background-color: #154859 ;
   padding: 20px;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
 nav a{
     color:#dfdfdf; 
     text-decoration: none;
     font-family: "Acme", Arial, Verdana, sans-serif;
     padding: 20px;
 }
+
 nav a:hover{
     background-color:#509161 ;
     color:#52a3c1;
     text-decoration: none;
     font-family: "Acme", Arial, Verdana, sans-serif;
 }
+
 .logo{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
     width: 80px;
     padding: 20px
 }
+
 #logo_link{
     padding-top: 5px;
 }
-#hero-img{
+
+#hero{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr;
+}
+
+#hero-box { 
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+#hero-img {
     width: 100%;
 }
 
-.card-img{
-    width: 400px;
+#hero-msg h4{
+    color: white;
 }
+
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
 .icon{
     width: 80px;
     padding: 10px;
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
 .home-title{
-    color:#224E41;
+    color:white;
     font-family: "Acme", Arial, Verdana, sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
+
 h4{
     color:#52a3c1;
 }
+
 .book, .join{
     background-color:#154859;
     color: white;
@@ -69,71 +110,165 @@ h4{
     margin-top: 50px;
     border-radius: 5px;
 }
+
 .book:hover, .join:hover {
     background-color:white ;
     color:#52a3c1;
 }
+
 .msg h2{
     color:#224E41;
 }
+
 .msg{
     background-color:#509161 ;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #52a3c1;
 }
+
 .msg p {
     color:white;
     font-family: "Mukta", Trebuchet, Courier, sans-serif;
     font-size: .9em;
     padding-bottom:15px ;
 }
+
 footer{
     background-color:#509161 ;
     padding: 25px 50px; 
-    margin-top: 200px;   
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
 }
+
 #hero-msg h1, #hero-msg h4{
     text-align: center;
     font-family: "Mukta", Trebuchet, Courier, sans-serif;
 }
+
 .button-box{
     text-align: center;
 
 }
+
 main section {
     text-align: center;
     font-family: "Acme", Arial, Verdana, sans-serif;
 }
+
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
+
+.rivers-card{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
 .card-img{
     border: 10px solid #154859;
+    box-shadow: 5px 5px 10px #52a3c1;
 }
+
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+ .card-img, .mountains{
+    width: 100%;
+ }
+
 .mountains{
-    margin: 80px;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #52a3c1;
 }
+
 #background{
     height: 400px;
     background-color:#52a3c1 ;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
+
 main section img{
     box-sizing: border-box;
 }
+
 footer a{
     color:white;
     text-decoration: none;
 }
+
 footer a:hover{
     color: black;
     text-decoration: underline;
 }
+
 footer p{
     font-size: 1.2em;
     font-family: "Mukta", Trebuchet, Courier, sans-serif;
     text-decoration: none;
     color: white  
 }
+
 footer.social img{
     padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
