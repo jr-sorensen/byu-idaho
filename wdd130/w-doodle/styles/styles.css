@@ -22,23 +22,33 @@ header {
   display: grid;
   grid-template-columns: 150px auto;
   background-color: #CFC4C0 ;
-  padding: 20px;
+  height: 90px;
 }
 
-nav{
-    display: flex;
+.navbar {
+    padding: 5px;
+    background-color: #CFC4C0;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100% ; /* Full width */
+    display:flex;
     justify-content: space-around;
-    padding-top: 20px;
-}
+    justify-items: left;
+    align-items:center;
+    }
 
-nav a{
+
+.navbar a{
     color:#393956; 
     text-decoration: none;
     font-family: "Overlock", 'Brush Scipt MT', bold;
     padding: 30px;
+    
+
 }
 
 nav a:hover{
+    padding: 30px;
     background-color:#DFB186 ;
     color:#5B5970;
     text-decoration: none;
@@ -47,8 +57,8 @@ nav a:hover{
 
 .logo{
     padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+    object-position: left;
+    align-self:left;
     width: 100px;
     padding: 5px
 }
@@ -70,6 +80,7 @@ nav a:hover{
 }
 #hero-box img {
     width: 100%;
+    
 
 }#hero-msg h1{
     grid-row: 2/3;
