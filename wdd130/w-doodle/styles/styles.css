@@ -69,10 +69,8 @@ nav a:hover{
 .home-title{
     color: white;
     padding-top: 5px;
-    text-align: center;
-    
+    text-align: center; 
 }
-
 
 #hero{
     display:grid;
@@ -100,6 +98,7 @@ nav a:hover{
 }
 
 .home-grid {
+    
     display: grid;
     margin-left: 50px;
     width: 200px;
@@ -116,6 +115,86 @@ nav a:hover{
 .direct{
     justify-content: center;
     align-items: center;
+}
+
+.info-card{
+    margin: 50px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+}
+.doodle-grid h2{
+    margin-top: 90px;
+    align-content: center;
+    justify-content: center;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #DFB186;
+    text-align: center;
+    font-size: 3em;
+}
+
+.info-card img{
+    width: 500px;
+    height: 400px;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 15px;
+    grid-column: 1fr ;  
+}
+#info-text {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    padding: 40px;
+    color: white;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
+}
+.generation-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.generation-card h1{
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #DFB186;
+    text-align: center;
+    font-size: 4em;
+    grid-column: 2/3;
+}
+.generation-card img{
+    align-items: center;
+    justify-content:space-evenly;
+    grid-column: 2/3;
+}
+.generation-card h3,.generation-card p{
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
+}
+.colors-card h3{
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #DFB186;
+    text-align: center;
+    font-size: 2em;  
+}
+.colors{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+}
+.colors img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 600px;
+
+    border-radius: 15px;
+}
+.colors p{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: left;
+    color: white;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
 }
 .what-card h2, .what-card p{
     margin:50px;
