@@ -112,6 +112,21 @@ nav a:hover{
     margin: 50px; 
     border-radius: 15px;
 }
+.dog-grid h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size:2em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #DFB186;
+}
+
+.dog-grid p{
+    margin: 80px;
+    text-align: center;
+    font-size:1.5em;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
+    color: #ffffff;}
+    
 .direct{
     justify-content: center;
     align-items: center;
@@ -126,21 +141,6 @@ nav a:hover{
     width: 450px;
 }
 
-.dog-grid h2{
-    margin-top: 80px;
-    text-align: center;
-    font-size:2em;
-    font-family: "Overlock", 'Brush Scipt MT', bold;
-    color: #DFB186;
-}
-
-.dog-grid p{
-    margin: 80px;
-    text-align: center;
-    font-size:1.5em;
-    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
-    color: #ffffff;
-}
 .puppy-card h5{
     margin: 50px;
     text-align:left;
@@ -256,7 +256,6 @@ nav a:hover{
     width: 450px;
 }
 .adopt-card h5{
-    
     text-align: right;
     color: white;
     font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
