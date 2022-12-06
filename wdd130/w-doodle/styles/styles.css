@@ -116,6 +116,151 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 }
+.puppy-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 50px;
+    padding: 50px;
+}
+.puppy-card img{
+    width: 450px;
+}
+
+.dog-grid h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size:2em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #DFB186;
+}
+
+.dog-grid p{
+    margin: 80px;
+    text-align: center;
+    font-size:1.5em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+    color: #ffffff;
+}
+.puppy-card p{
+    margin: 50px;
+    text-align:left;
+    color: white;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+#examples img{
+    width: 250px;
+    align-content: center;
+    justify-content: space-around;
+}
+#examples{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+.good-examples-card{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px; 
+    padding: 50px;
+    background-color: white;
+    border: 1px  #CFC4C0;
+}
+.good-examples-card img{
+    display: grid;
+    grid-template-columns: repeat, 100px;
+    margin: 20px;
+}
+#img1{ 
+    grid-column: 1/2;
+}
+#img2{
+    float:right;
+}
+
+.good-examples-card h3{
+    margin-top: 30px;
+    text-align: center;
+    color:#393956;
+    font-size: 1.5em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+}
+.checklist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 80px;
+    padding:50px;
+}
+.good-checklist h2{
+    margin-top: 100px;
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+}
+.good-checklist p{
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif; 
+    color:white;
+    font-size: .7em; 
+}
+.bad-examples-card{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px; 
+    padding: 50px;
+    background-color: white;
+    border: 1px  #CFC4C0;
+    display: grid;
+    grid-template-columns: 450px;
+}
+.bad-examples-card img{
+    width: 300px;
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    
+}
+.bad-examples-card h3{
+    margin-top: 30px;
+    text-align: center;
+    color:#393956;
+    font-size: 1.5em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+}
+.look-out h2{
+    margin-top: 100px;
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Overlock", 'Brush Scipt MT', bold;
+}
+.look-out p {
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif; 
+    color:white;
+    font-size: .7em;  
+}
+
+.adopt-card{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 50px;
+    padding: 50px;
+} 
+.adopt-card img{
+    width: 450px;
+}
+.adopt-card p{
+    margin: 50px;
+    text-align: right;
+    color: white;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
+    font-size: 1.2em;
+    width: 500px;
+}
 
 .info-card{
     margin: 50px;
