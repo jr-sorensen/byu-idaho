@@ -58,7 +58,7 @@ nav a:hover{
 .logo{
     padding-top: 5px;
     object-position: left;
-    align-self:left;
+    align-self:center;
     width: 100px;
     padding: 5px
 }
@@ -134,14 +134,14 @@ nav a:hover{
     color: #DFB186;
 }
 
-.dog-grid p{
+.dog-grid h5, .dog-grid p{
     margin: 80px;
     text-align: center;
     font-size:1.5em;
-    font-family: "Overlock", 'Brush Scipt MT', bold;
+    font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
     color: #ffffff;
 }
-.puppy-card p{
+.puppy-card h5{
     margin: 50px;
     text-align:left;
     color: white;
@@ -171,16 +171,18 @@ nav a:hover{
 }
 .good-examples-card img{
     display: grid;
-    grid-template-columns: repeat, 100px;
-    margin: 20px;
+    grid-template-columns:  200px;
+    margin: 10px;
 }
 #img1{ 
-    grid-column: 1/2;
+    float:left;
 }
 #img2{
     float:right;
 }
-
+#img3{
+    float:left;
+}
 .good-examples-card h3{
     margin-top: 30px;
     text-align: center;
@@ -198,7 +200,7 @@ nav a:hover{
     margin-top: 100px;
     text-align: center;
     color:white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: "Overlock", 'Brush Scipt MT', bold;
 }
 .good-checklist p{
@@ -218,7 +220,7 @@ nav a:hover{
     grid-template-columns: 450px;
 }
 .bad-examples-card img{
-    width: 300px;
+    width: 400px;
     margin-left:100px;
     margin-right: 100px;
     margin-top: 20px;
@@ -228,14 +230,14 @@ nav a:hover{
     margin-top: 30px;
     text-align: center;
     color:#393956;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: "Overlock", 'Brush Scipt MT', bold;
 }
 .look-out h2{
     margin-top: 100px;
     text-align: center;
     color:white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: "Overlock", 'Brush Scipt MT', bold;
 }
 .look-out p {
@@ -253,13 +255,13 @@ nav a:hover{
 .adopt-card img{
     width: 450px;
 }
-.adopt-card p{
-    margin: 50px;
+.adopt-card h5{
+    
     text-align: right;
     color: white;
     font-family: "Quicksand",Helvetica, 'Lato', sans-serif;
     font-size: 1.2em;
-    width: 500px;
+    width: 650px;
 }
 
 .info-card{
@@ -284,7 +286,7 @@ nav a:hover{
     justify-content: center; 
     align-items: center;
     border-radius: 15px;
-    grid-column: 1fr ;  
+    grid-column: 1 ;  
 }
 #info-text {
     align-content: center;
